@@ -1,0 +1,8 @@
+html, body {
+    height: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: azure;
+    background-image:linear-gradient( 45deg,rgb(16, 137, 207), rgb(227, 199, 13))
+    
+}

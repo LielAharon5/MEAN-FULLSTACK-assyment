@@ -1,0 +1,23 @@
+<div>
+
+    <form (ngSubmit)="send()" ngNativeValidate>
+
+
+        <label>Task Description:</label>
+        <input type="text" name="description" [(ngModel)]="Task.description" required>
+
+        <label>Date:</label>
+        <input type="date" name="date" [(ngModel)]="Task.date" required>
+
+        <label>Costomer:</label>
+        <select name="costomerId" [(ngModel)]="Task.costomerId" required>
+            <option selected disabled value="">Select Costomer</option>
+            <option *ngFor="let v of costomers" value={{v._id}}>{{v.name}}</option>
+        </select>
+        
+
+        <button>Add</button>
+
+    </form>
+
+</div>

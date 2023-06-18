@@ -1,0 +1,31 @@
+<div>
+
+    <select (change)="displayMovies($event)">
+        <option selected disabled value="">Select Theater</option>
+        <option *ngFor="let t of theaters" value={{t._id}}>{{t.name}}</option>
+    </select>
+
+    <table *ngIf="movies?.length">
+        <thead>
+            <tr>
+                <th>Theater Name</th>
+                <th>Movie Name</th>
+                <th>Date & Time</th>
+                <th>Duration</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of movies">
+                <td>{{m.theater.name}}</td>
+                <td>{{m.name}}</td>
+                <td>{{m.dateTime | date:"dd/MM/yyyy HH:mm"}}</td>
+                <td>{{m.duration}} min</td>
+                <td>
+                    <button (click)="deleteMe(m._id)">❌</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <h2>tasks list</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Task Description</td>
+                    <td>Costomer</td>
+                    <td>Date</td>
+                    <td>Done?</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let t of tasks">
+                    <td>{{t.description}}</td>
+                    <td >{{t.costomers.name}}</td>
+                    <td>{{t.date | date:"dd/MM/yyyy"}}</td>
+                    <td>{{t.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

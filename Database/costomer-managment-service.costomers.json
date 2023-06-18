@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "648f21f025d361f7cdba23af"
+  },
+  "name": "max-stock",
+  "lineOfBusiness": "stock store",
+  "phoneNumber": "050-7273827",
+  "email": "MaxStock@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "648f22ce25d361f7cdba23b0"
+  },
+  "name": "rami-levy",
+  "lineOfBusiness": "supermarket",
+  "phoneNumber": "058-7223227",
+  "email": "ramilevy@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "648f232f25d361f7cdba23b1"
+  },
+  "name": "elbar",
+  "lineOfBusiness": "car rental",
+  "phoneNumber": "053-3343433",
+  "email": "elbar@gmail.com"
+}]
